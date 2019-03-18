@@ -1,0 +1,83 @@
+--SELECT  'DROP SEQUENCE ' || sequence_name || ' ;' FROM user_sequences;
+--SELECT  'DROP TABLE ' || table_name || ' cascade constraints;' FROM user_tables;
+--SELECT  'DROP VIEW ' || view_name || ' cascade constraints;' FROM user_views;
+
+-- Errors in this script are allowed / expected
+
+DROP PACKAGE NTC_UTIL;
+
+DROP VIEW VW001_CONTACT_PIVOT cascade constraints;
+DROP VIEW VW002_SUBMISSION_PIVOT cascade constraints;
+DROP VIEW VW003_FIELD_LOOKUP cascade constraints;
+DROP VIEW VW004_DATA_ALL cascade constraints;
+DROP VIEW VW005_DATA_FLAT_RAW cascade constraints;
+DROP VIEW VW006_SUBMISSION_COMPLETE cascade constraints;
+
+DROP TABLE YY000_USER cascade constraints;
+DROP TABLE YY001_PROGRAM cascade constraints;
+DROP TABLE YY002_TIME_WINDOW cascade constraints;
+DROP TABLE YY003_FORM cascade constraints;
+DROP TABLE YY004_SECTION cascade constraints;
+DROP TABLE YY005_FIELD cascade constraints;
+DROP TABLE YY006_VALIDATION cascade constraints;
+DROP TABLE YY007_VALIDATION_RULE cascade constraints;
+DROP TABLE YY008_XREF_FIELD_VALIDATION cascade constraints;
+DROP TABLE YY009_SECTION_FIELD cascade constraints;
+DROP TABLE YY010_DOCUMENT cascade constraints;
+DROP TABLE YY011_DOCUMENT_DATA cascade constraints;
+DROP TABLE YY012_FIELD_RESPONSE cascade constraints;
+DROP TABLE YY013_XREF_USER_PROGRAM cascade constraints;
+DROP TABLE YY014_SUBMISSION cascade constraints;
+DROP TABLE YY015_SUBMISSION_SECTION cascade constraints;
+DROP TABLE YY016_FIELD_SET_RESPONSE cascade constraints;
+DROP TABLE YY017_FIELD_RELATED cascade constraints;
+
+DROP TABLE TY001_LANGUAGE cascade constraints;
+DROP TABLE TY002_LABEL cascade constraints;
+DROP TABLE TY003_RESOURCE cascade constraints;
+DROP TABLE TY004_FIELD_TYPE cascade constraints;
+DROP TABLE TY005_VALIDATION_ATTRIBUTE cascade constraints;
+DROP TABLE TY006_VALIDATION_OPERATOR cascade constraints;
+DROP TABLE TY007_FIELD_SET cascade constraints;
+DROP TABLE TY008_FIELD_SET_VALUE cascade constraints;
+
+DROP TABLE WY000_USER cascade constraints;
+DROP TABLE WY001_PROGRAM cascade constraints;
+DROP TABLE WY002_TIME_WINDOW cascade constraints;
+DROP TABLE WY003_FORM cascade constraints;
+DROP TABLE WY004_SECTION cascade constraints;
+DROP TABLE WY005_FIELD cascade constraints;
+DROP TABLE WY006_VALIDATION cascade constraints;
+DROP TABLE WY007_VALIDATION_RULE cascade constraints;
+DROP TABLE WY008_XREF_FIELD_VALIDATION cascade constraints;
+DROP TABLE WY009_SECTION_FIELD cascade constraints;
+DROP TABLE WY010_DOCUMENT cascade constraints;
+DROP TABLE WY012_FIELD_RESPONSE cascade constraints;
+DROP TABLE WY013_XREF_USER_PROGRAM cascade constraints;
+DROP TABLE WY014_SUBMISSION cascade constraints;
+DROP TABLE WY015_SUBMISSION_SECTION cascade constraints;
+DROP TABLE WY016_FIELD_SET_RESPONSE cascade constraints;
+DROP TABLE WY017_FIELD_RELATED cascade constraints;
+DROP TABLE WY101_LANGUAGE cascade constraints;
+DROP TABLE WY102_LABEL cascade constraints;
+DROP TABLE WY103_RESOURCE cascade constraints;
+DROP TABLE WY104_FIELD_TYPE cascade constraints;
+DROP TABLE WY105_VALIDATION_ATTRIBUTE cascade constraints;
+DROP TABLE WY106_VALIDATION_OPERATOR cascade constraints;
+DROP TABLE WY107_FIELD_SET cascade constraints;
+DROP TABLE WY108_FIELD_SET_VALUE cascade constraints;
+
+DROP SEQUENCE TY001_LANGUAGE_SEQ ;
+DROP SEQUENCE TY003_RESOURCE_SEQ ;
+DROP SEQUENCE TY007_FIELD_SET_SEQ ;
+DROP SEQUENCE YY000_USER_SEQ ;
+DROP SEQUENCE YY001_PROGRAM_SEQ ;
+DROP SEQUENCE YY002_TIME_WINDOW_SEQ ;
+DROP SEQUENCE YY003_FORM_SEQ ;
+DROP SEQUENCE YY004_SECTION_SEQ ;
+DROP SEQUENCE YY005_FIELD_SEQ ;
+DROP SEQUENCE YY006_VALIDATION_SEQ ;
+DROP SEQUENCE YY007_VALIDATION_RULE_SEQ ;
+DROP SEQUENCE YY010_DOCUMENT_SEQ ;
+DROP SEQUENCE YY011_DOCUMENT_DATA_SEQ ;
+DROP SEQUENCE YY014_SUBMISSION_SEQ ;

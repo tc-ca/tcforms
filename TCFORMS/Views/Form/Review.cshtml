@@ -1,0 +1,41 @@
+﻿@using Newtonsoft.Json;
+@model IList<Section>
+
+@{
+    ViewBag.PageHeader = Labels.Review;
+}
+
+<div class="row">
+    <div class="col-md-10">
+        <p>@Labels.AreYouSureYouWantToSubmit</p>
+    </div>
+    <div class="col-md-2">
+        @Html.Partial("_PrintButton", new ViewDataDictionary { { "CssClass", "pull-right" } })
+    </div>
+</div>
+
+<div id="sections-render">
+    @Html.Partial("Partials/_Preview", Model)
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_PrintButton")
+        <span class="pull-right">
+            <a class="btn btn-default hidden-print" href="@Url.Action("Section", new {id = Model.Last().Id})">@Html.Partial("_Icon", "arrow-left") @Labels.Previous</a>
+            <a class="btn btn-primary hidden-print" href="@Url.Action("Submit")">@Labels.Submit</a>
+        </span>
+    </div>
+</div>
+
+@section CustomScripts
+{
+    <script>
+        (function() {
+            'use strict';
+
+            var sections = @Html.Raw(JsonConvert.SerializeObject(Model, Config.JsonSettings));
+            window.TcForms.GenerateSections($('#sections-render'), sections);
+        })();
+    </script>
+}

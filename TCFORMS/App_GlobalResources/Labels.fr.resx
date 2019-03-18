@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationMenuHeader" xml:space="preserve">
+    <value>Fonds national des corridors commerciaux (FNCC)</value>
+  </data>
+  <data name="AreYouSureYouWantToSubmit" xml:space="preserve">
+    <value>Êtes-vous certain de vouloir soumettre ces données?</value>
+  </data>
+  <data name="Begin" xml:space="preserve">
+    <value>Commencer</value>
+  </data>
+  <data name="DefaultResources" xml:space="preserve">
+    <value>Ressources par défaut</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DEV" xml:space="preserve">
+    <value>Développement</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erreur de serveur interne</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Le serveur Web n'est pas en mesure de traiter la requête. Veuillez réessayer ultérieurement. Veuillez contacter l'administrateur du serveur Web si le problème persiste.</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
+  <data name="HomeMenu" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
+  <data name="HomePageHeader" xml:space="preserve">
+    <value>Créer une déclaration d’intérêt pour le Fonds national des corridors commerciaux - Appel continu</value>
+  </data>
+  <data name="HomePageNewOrExistingBody" xml:space="preserve">
+    <value>Pour commencer une nouvelles déclaration d'intérêt pour le Fonds national des corridors commerciaux - Appel continu ou poursuivre une déclaration d'intérêt existante, cliquez sur &lt;strong&gt;Nouvelle ou actuelle déclaration d'intérêt&lt;/strong&gt; dans le menu de navigation situé à gauche.</value>
+  </data>
+  <data name="HomePageNewOrExistingHeader" xml:space="preserve">
+    <value>Pour commencer une nouvelle déclaration d'intérêt ou poursuivre avec une déclaration d'intérêt existante :</value>
+  </data>
+  <data name="HomePageOnlyOne" xml:space="preserve">
+    <value>Vous ne pouvez avoir qu’une seule ébauche de déclaration d’intérêt à la fois. Après avoir présenté une déclaration d’intérêt, vous pouvez en commencer une nouvelle.</value>
+  </data>
+  <data name="HomePageSubmittedBody" xml:space="preserve">
+    <value>Si vous avez déjà présenté une déclaration d’intérêt pour le Fonds national des corridors commerciaux  - Appel continu et que vous aimeriez voir l’information présentée, veuillez consulter le courriel que vous avez reçu après avoir présenté votre déclaration d’intérêt pour trouver un lien vers cette dernière.</value>
+  </data>
+  <data name="HomePageSubmittedHeader" xml:space="preserve">
+    <value>Pour consulter une déclaration d’intérêt déjà présentée :</value>
+  </data>
+  <data name="NewOrExistingSubmission" xml:space="preserve">
+    <value>Nouvelle ou actuelle déclaration d'intérêt</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="NorthernCall" xml:space="preserve">
+    <value>Si vous voulez faire une demande dans le cadre de l'appel de propositions du Nord, veuillez suivre &lt;a href="{0}"&gt;ce lien&lt;/a&gt;.</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>Nous ne pouvons trouver cette page Web</value>
+  </data>
+  <data name="PageNotFoundMessage" xml:space="preserve">
+    <value>Nous sommes désolés que vous ayez abouti ici. Il arrive parfois qu’une page ait été déplacée ou supprimée.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="ReturnHomePage" xml:space="preserve">
+    <value>Retournez à la page d’accueil</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Revoir</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="SubmissionReceived" xml:space="preserve">
+    <value>Soumission reçu</value>
+  </data>
+  <data name="SubmissionReceivedMessage" xml:space="preserve">
+    <value>Votre soumission a été recu. Un courriel de confirmation vous sera acheminé sous peu.</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Soumettre</value>
+  </data>
+  <data name="SubmitAcknowledgement" xml:space="preserve">
+    <value>En cliquant &lt;strong&gt;Soumettre La déclaration d’intérêt&lt;/strong&gt;, vous reconnaissez que l'organisme est responsable des dépassements de coûts et que l’information soumise peut-être partagée ou référée à d’autres ministères, agences fédérales, incluant les sociétés d'État.</value>
+  </data>
+  <data name="SubmitEmailMessage" xml:space="preserve">
+    <value>Une fois la demande présentée, Transports Canada enverra un courriel de confirmation de votre déclaration d’intérêt aux deux personnes-ressources indiquées à la section 1B. Votre courriel contiendra un lien vers la déclaration d’intérêt que vous avez présenté.&lt;br&gt;&lt;br&gt;Si ces personnes-ressources ne reçoivent pas de confirmation par courriel, veuillez envoyer un courriel à la boîte de messagerie générique du FNCC à l’adresse &lt;a href="mailto:tc.ntcf-fncc.tc@tc.gc.ca"&gt;tc.ntcf-fncc.tc@tc.gc.ca&lt;/a&gt;.</value>
+  </data>
+  <data name="SubmitEOI" xml:space="preserve">
+    <value>Soumettre la déclaration d'intérêt</value>
+  </data>
+  <data name="SubmitErrorMessage" xml:space="preserve">
+    <value>Vous devez completer les coordonnées de la personne ressource afin de soumettre la demande d’intérêt.</value>
+  </data>
+  <data name="UserGuide" xml:space="preserve">
+    <value>Guide du demandeur</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Profil de l’utilisateur</value>
+  </data>
+</root>

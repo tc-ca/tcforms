@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/GoC.WebTemplate/GoCWebTemplate.Application.LeftMenu_Layout.cshtml";
+}
+
+@section CustomStyles
+{
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    @RenderSection("CustomStyles", false)
+}
+
+@section CustomScripts
+{
+    <!-- Vendor -->
+    <script src="~/Scripts/js/vendor/form-render.min.js"></script>
+    <script src="~/Scripts/js/vendor/jquery.are-you-sure.js"></script>
+
+    <!-- Hacks/Fixes -->
+    <script src="~/Scripts/js/left-menu-navcurr.js"></script>
+    <script src="~/Scripts/js/firefox-print-fix.js"></script>
+    <script src="~/Scripts/js/target-blank-fix.js"></script>
+
+    <!-- Application JS -->
+    <script src="~/Scripts/js/tcforms.js"></script>
+    <script src="~/Scripts/js/print-form.js"></script>
+
+    @RenderSection("CustomScripts", false)
+}
+
+<div class="wb-frmvld">
+    <h1 id="wb-cont">@ViewBag.PageHeader</h1>
+    @RenderBody()
+</div>

@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = Labels.Home;
+    ViewBag.PageHeader = Labels.HomePageHeader;
+}
+
+<section class="alert alert-info">
+    <p>@Html.Raw(String.Format(Labels.NorthernCall, Urls.NorthernCall))</p>
+</section>
+
+<section class="panel panel-default">
+    <header class="panel-heading">
+        <h4 class="panel-title">@Labels.HomePageNewOrExistingHeader</h4>
+    </header>
+    <div class="panel-body">
+        <p>@Html.Raw(Labels.HomePageNewOrExistingBody)</p>
+    </div>
+</section>
+
+<section class="panel panel-default">
+    <header class="panel-heading">
+        <h4 class="panel-title">@Labels.HomePageSubmittedHeader</h4>
+    </header>
+    <div class="panel-body">
+        <p>@Labels.HomePageSubmittedBody</p>
+    </div>
+</section>
+
+<div class="alert alert-warning">
+    <p>@Labels.HomePageOnlyOne</p>
+</div>

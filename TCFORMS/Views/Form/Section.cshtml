@@ -1,0 +1,35 @@
+﻿@using Newtonsoft.Json;
+@model Section
+
+@{
+    ViewBag.PageHeader = Model.Label;
+}
+
+@using (Html.BeginForm("Section", "Form", FormMethod.Post))
+{
+    <div id="fields-render"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-default" type="submit" name="nav" value="save">@Html.Partial("_Icon", "floppy-disk") @Labels.Save</button>
+            <span class="pull-right">
+                @if (Model.PreviousSectionId != null)
+                {
+                    <button class="btn btn-default" type="submit" name="nav" value="previous">@Html.Partial("_Icon", "arrow-left") @Labels.Previous</button>
+                }
+                <button class="btn btn-primary" type="submit" name="nav" value="next">@Labels.Next @Html.Partial("_Icon", "arrow-right")</button>
+            </span>
+        </div>
+    </div>
+}
+
+@section CustomScripts
+{
+    <script>
+        (function() {
+            'use strict';
+
+            var fields = @Html.Raw(JsonConvert.SerializeObject(Model.Fields, Config.JsonSettings));
+            window.TcForms.LoadFields($('#fields-render'), fields);
+        }());
+    </script>
+}

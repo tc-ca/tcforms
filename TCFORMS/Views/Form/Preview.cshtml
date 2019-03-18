@@ -1,0 +1,33 @@
+﻿@using Newtonsoft.Json
+@model Form
+@{
+    ViewBag.PageHeader = Model.Label;
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_PrintButton", new ViewDataDictionary{ { "CssClass", "pull-right" } })
+    </div>
+</div>
+
+<div id="sections-render">
+    @Html.Partial("Partials/_Preview", Model.Sections)
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_PrintButton", new ViewDataDictionary { { "CssClass", "pull-right" } })
+    </div>
+</div>
+
+@section CustomScripts
+{
+    <script>
+        (function() {
+            'use strict';
+
+            var sections = @Html.Raw(JsonConvert.SerializeObject(Model.Sections, Config.JsonSettings));
+            window.TcForms.GenerateSections($('#sections-render'), sections);
+        })();
+    </script>
+}

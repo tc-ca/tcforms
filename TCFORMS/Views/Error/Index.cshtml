@@ -1,0 +1,27 @@
+﻿@model HandleErrorInfo
+
+@{
+    ViewBag.PageHeader = Labels.Error;
+}
+
+<div>
+    <p>@Labels.ErrorMessage</p>
+
+    <p>@Html.ActionLink(Labels.ReturnHomePage, "Index", "Home")</p>
+</div>
+
+@if (Model != null && HttpContext.Current.IsDebuggingEnabled)
+{
+    <div>
+        <p>
+            <strong>Exception:</strong> @Model.Exception.Message<br />
+            <strong>Controller:</strong> @Model.ControllerName<br />
+            <strong>Action:</strong> @Model.ActionName
+        </p>
+        <div style="overflow:scroll">
+            <pre>
+                    @Model.Exception.StackTrace
+            </pre>
+        </div>
+    </div>
+}

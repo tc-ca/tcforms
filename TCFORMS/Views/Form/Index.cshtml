@@ -1,0 +1,13 @@
+﻿@model Form
+
+@{
+    ViewBag.PageHeader = Labels.Overview;
+}
+
+<ul>
+    @foreach (var s in Model.Sections)
+    {
+        <li><a href="@Url.Action("Section", new { id = s.Id })">@s.Label</a></li>
+    }
+</ul>
+<a href="@Url.Action("Section", new { id = Model.Sections.First().Id })" class="btn btn-primary">@Labels.Begin</a>

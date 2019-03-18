@@ -1,0 +1,13 @@
+﻿@model IList<Section>
+
+<div class="row">
+    <div class="col-md-12">
+        <fieldset disabled>
+            @foreach (var s in Model)
+            {
+                <h2>@s.Label</h2>
+                <div class="section-render" data-section="@s.Id"></div>
+            }
+        </fieldset>
+    </div>
+</div>

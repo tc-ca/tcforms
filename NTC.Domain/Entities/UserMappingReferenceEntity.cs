@@ -1,0 +1,43 @@
+namespace NTC.Domain.Entities
+{
+    using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+    [Table("NTC.YY004_XREF_USER_MAPPING")]
+    public partial class UserMappingReferenceEntity
+    {
+        [Key]
+        [Column("USER_ID", Order = 0)]        
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
+
+        [Key]
+        [Column("REMOTE_USER_ID", Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int RemoteUserId { get; set; }
+
+        [Column("DATE_CREATED_DTE")]
+        public DateTime DateCreated { get; set; }
+
+        [Column("DATE_LAST_UPDATE_DTE")]
+        public DateTime? DateLastUpdate { get; set; }
+
+        [Column("DATE_DELETED_DTE")]
+        public DateTime? DateDeleted { get; set; }
+
+        [Column("USER_CREATED_ID")]
+        public int UserCreatedId { get; set; }
+
+        [Column("USER_LAST_UPDATE_ID")]
+        public int? UserLastUpdateId { get; set; }
+
+        public virtual UserEntity User { get; set; }
+
+        public virtual UserEntity UserCreated { get; set; }
+
+        public virtual UserEntity UserLastUpdated { get; set; }
+
+        public virtual RemoteUserEntity RemoteUsers { get; set; }
+    }
+}

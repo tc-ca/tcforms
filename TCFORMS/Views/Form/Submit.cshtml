@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.PageHeader = Labels.Submit;
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        <p>@ViewBag.ErrorMessage</p>
+    </div>
+}
+
+@using (Html.BeginForm("Complete", "Form", FormMethod.Post))
+{
+    <section class="alert alert-info">
+        <p>@Html.Raw(String.Format(Labels.SubmitEmailMessage, Config.SenderEmail))</p>
+    </section>
+
+    <section class="alert alert-warning">
+        <p>@Html.Raw(Labels.SubmitAcknowledgement)</p>
+    </section>
+
+    <button class="btn btn-primary" type="submit">@Labels.SubmitEOI</button>
+}

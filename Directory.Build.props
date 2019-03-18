@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <PublishUrl Condition="'$(PublishBaseUrl)' != '' and '$(PublishUrl)' == ''">$(PublishBaseUrl)\$(MSBuildProjectName)\</PublishUrl>
+  </PropertyGroup>
+</Project>

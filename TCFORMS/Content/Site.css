@@ -1,0 +1,20 @@
+﻿.checkbox label, .radio label {
+    display: inline;
+}
+
+fieldset {
+    border-top: 0;
+    padding-top: 0;
+}
+
+label.fb-checkbox-group-label:empty {
+    display: none;
+}
+
+label.fb-checkbox-group-label:blank {
+    display: none;
+}
+
+label.fb-checkbox-group-label:-moz-only-whitespace {
+    display: none;
+}

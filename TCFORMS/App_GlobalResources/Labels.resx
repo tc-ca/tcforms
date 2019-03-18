@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationMenuHeader" xml:space="preserve">
+    <value>National Trade Corridors Fund (NTCF)</value>
+  </data>
+  <data name="AreYouSureYouWantToSubmit" xml:space="preserve">
+    <value>Are you sure you want to submit the following data?</value>
+  </data>
+  <data name="Begin" xml:space="preserve">
+    <value>Begin</value>
+  </data>
+  <data name="DefaultResources" xml:space="preserve">
+    <value>Default Resources</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DEV" xml:space="preserve">
+    <value>Development</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Internal server error</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>The Web server is incapable of performing the request. Please try your request again later. Please contact the Web server's administrator if this problem persists.</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HomeMenu" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HomePageHeader" xml:space="preserve">
+    <value>Create an expression of interest for the National Trade Corridors Fund - Continuous call</value>
+  </data>
+  <data name="HomePageNewOrExistingBody" xml:space="preserve">
+    <value>To start a new expression of interest for the National Trade Corridors Fund - Continuous call or continue one that has not yet been submitted, click on &lt;strong&gt;New or Existing Expression of Interest&lt;/strong&gt; in the left-side navigation menu.</value>
+  </data>
+  <data name="HomePageNewOrExistingHeader" xml:space="preserve">
+    <value>To start a new expression of interest or continue an existing one:</value>
+  </data>
+  <data name="HomePageOnlyOne" xml:space="preserve">
+    <value>You can only have one draft expression of interest at a time. After you submit the expression of interest, you can start a new one.</value>
+  </data>
+  <data name="HomePageSubmittedBody" xml:space="preserve">
+    <value>If you have already submitted an expression of interest for the National Trade Corridors Fund  - Continuous call and would like to see the information you submitted, please refer to the email you received after submitting to find a link to your expression of interest.</value>
+  </data>
+  <data name="HomePageSubmittedHeader" xml:space="preserve">
+    <value>To view a submitted expression of interest:</value>
+  </data>
+  <data name="NewOrExistingSubmission" xml:space="preserve">
+    <value>New or Existing Expression of Interest</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NorthernCall" xml:space="preserve">
+    <value>If you are applying for the Northern call, please follow &lt;a href="{0}"&gt;this link&lt;/a&gt;.</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>We couldn't find that Web page</value>
+  </data>
+  <data name="PageNotFoundMessage" xml:space="preserve">
+    <value>We're sorry you ended up here. Sometimes a page gets moved or deleted.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="ReturnHomePage" xml:space="preserve">
+    <value>Return to the home page</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SubmissionReceived" xml:space="preserve">
+    <value>Submission Received</value>
+  </data>
+  <data name="SubmissionReceivedMessage" xml:space="preserve">
+    <value>Your submission has been received. You will receive a confirmation email shortly.</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SubmitAcknowledgement" xml:space="preserve">
+    <value>By clicking &lt;strong&gt;Submit Expression of Interest&lt;/strong&gt;, you acknowledge that the organization is responsible for all cost overruns and that the submitted information may be shared, or referred to, by other federal departments and agencies, including crown corporations.</value>
+  </data>
+  <data name="SubmitEmailMessage" xml:space="preserve">
+    <value>Upon submission, Transport Canada will send an email confirmation of your expression of interest submission to both contact individuals provided in Section 1B. Your email will contain a link to the expression of interest you have submitted.&lt;br&gt;&lt;br&gt;If these contacts do not receive an email confirmation, please email the NTCF generic inbox at &lt;a href="mailto:{0}"&gt;{0}&lt;/a&gt;.</value>
+  </data>
+  <data name="SubmitEOI" xml:space="preserve">
+    <value>Submit Expression of Interest</value>
+  </data>
+  <data name="SubmitErrorMessage" xml:space="preserve">
+    <value>You must fill out contact information in order to submit the expression of interest.</value>
+  </data>
+  <data name="UserGuide" xml:space="preserve">
+    <value>User Guide</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>User Profile</value>
+  </data>
+</root>
